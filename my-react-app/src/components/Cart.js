@@ -17,7 +17,7 @@ return (
       <hr></hr>
       <h5> genre : {cart.product.genre} </h5>
       <h5> Quantity:
-      <input type="number" style={{width:'40px',backgroundColor:'rgb(6, 159, 183)',borderRadius:'30px'}} value={amount} onChange={(e) => 
+      <input type="number" min="0" style={{width:'40px',backgroundColor:'rgb(6, 159, 183)',borderRadius:'30px'}} value={amount} onChange={(e) => 
        { setAmount(e.target.value)
         
         const newData = {

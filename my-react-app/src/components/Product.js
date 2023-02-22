@@ -26,7 +26,7 @@ function Product({product}) {
         <p className="card-excerpt" style={{color:'white'}}> year_published:  {product.year_published}</p>
         <h4 className="middle" style={{color:'white'}}> price : {product.price}$ </h4>
         Quantity:
-        <input type="number" style={{width:'40px', textalign:'center'}} value={number} onChange={e => setNumber(e.target.value)}/>
+        <input type="number" min="0" style={{width:'40px', textalign:'center'}} value={number} onChange={e => setNumber(e.target.value)}/>
         <button className='mybutton' onClick={() =>
         fetch('http://localhost:8000/webshop/cart',{
           method: 'POST',
